@@ -1,0 +1,91 @@
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.mainProfile {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  width: 25vw;
+  height: 100vh;
+  background-color: #0066ff;
+  border-radius: 0 80px 0 0;
+  transition: all 0.5s ease;
+}
+
+.imgProfile {
+  width: 240px;
+  height: 240px;
+  border-radius: 100%;
+  overflow: hidden;
+  margin-top: 9rem;
+  margin-bottom: 4.5rem;
+  background-color: #ffffff;
+  user-select: none;
+  transition: transform 0.5s ease;
+}
+
+.imgProfile:hover {
+  transform: scale(1.1);
+}
+
+.imgP {
+  width: 100%;
+  height: 100%;
+  user-select: none;
+}
+
+.textProfile {
+  display: block;
+  width: 18vw;
+  height: 140px;
+  color: #ffffff;
+  font-weight: bold;
+  transition: all 0.5s ease;
+}
+
+.settings {
+  display: block;
+  position: relative;
+  bottom: 35rem;
+  right: 16rem;
+  z-index: 100;
+  //Media
+  //   .settings {
+  //   position: relative;
+  //   bottom: 620px;
+  //   right: 180px;
+  // }
+  transition: all 0.5s ease;
+}
+
+.btnSettings {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.grUserSettings {
+  color: #ffffff;
+  transition: transform 0.5s ease;
+}
+
+.grUserSettings:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 1920px) {
+  .mainProfile {
+    width: 27vw;
+  }
+
+  .settings {
+    right: 12.5rem;
+  }
+
+  .textProfile {
+    width: 21vw;
+  }
+}
